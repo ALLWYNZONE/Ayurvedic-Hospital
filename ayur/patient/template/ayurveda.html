@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ayurvedic Hospital</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">
+    <link rel="stylesheet" href="{% static 'css/styles-merged.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="{% static 'js/vendor/html5shiv.min.js' %}"></script>
+      <script src="{% static 'js/vendor/respond.min.js' %}"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <!-- Fixed navbar -->
+    
+     <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html" title="uiCookies:Stack">Stack</a>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+			<!--
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="portfolio-single.html">Portfolio Single</a></li>
+                <li class="dropdown-submenu dropdown">
+                  <a href="#" data-toggle="dropdown" class="dropdown-toggle"><span>Sub Menu</span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                    <li><a href="#">Second Level Menu</a></li>
+                  </ul>
+                </li>
+                <li><a href="services.html">Services</a></li>
+              </ul>
+            </li>
+			-->
+			<li><a href="http://127.0.0.1:8000/ayur/ayurveda">Ayurveda</a></li>
+			<li><a href="http://127.0.0.1:8000/ayur/departments">Departments</a></li>
+			<li><a href="http://127.0.0.1:8000/ayur/doctors">Doctors</a></li>
+			<li><a href="">Pharmacy</a></li>
+			<li><a href="http://127.0.0.1:8000/ayur/appointment/">Book Appointment</a></li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Ayur.com</a>
+              <ul class="dropdown-menu">
+                <li><a href="http://127.0.0.1:8000/ayur/aboutus">About Us</a></li>
+                <li><a href="http://127.0.0.1:8000/ayur/contact">Contact Us</a></li>
+              </ul>
+            </li>
+			
+            <li class="probootstra-cta-button"><a href="#" class="btn" data-toggle="modal" data-target="#loginModal">Log in</a></li>
+            <li class="probootstra-cta-button last"><a href="#" class="btn btn-ghost" data-toggle="modal" data-target="#signupModal">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="flexslider">
+      <ul class="slides">
+        
+        <li style="background-image: url({% static 'img/slider_3.jpg' %})" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center">
+                  <h1 class="probootstrap-heading">Ayurveda</h1>
+                  <p class="probootstrap-subheading">know about Ayurveda</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="probootstrap-section probootstrap-bg-white ">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center section-heading">
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+      <div class="owl-carousel owl-work">
+        <div class="item">
+          <a href="portfolio-single.html">
+            <img src="{% static 'img/work_1.jpg' %}" alt="Free Bootstrap Template by uiCookies.com">
+          </a>
+        </div>
+        <div class="item">
+          <a href="portfolio-single.html">
+            <img src="{% static 'img/work_2.jpg' %}" alt="Free Bootstrap Template by uiCookies.com">
+          </a>
+        </div>
+        <div class="item">
+          <a href="portfolio-single.html">
+            <img src="{% static 'img/work_3.jpg' %}" alt="Free Bootstrap Template by uiCookies.com">
+          </a>
+        </div>
+        <div class="item">
+          <a href="portfolio-single.html">
+            <img src="{% static 'img/work_4.jpg' %}" alt="Free Bootstrap Template by uiCookies.com">
+          </a>
+        </div>  
+        <div class="item">
+          <a href="portfolio-single.html">
+            <img src="{% static 'img/work_5.jpg' %}" alt="Free Bootstrap Template by uiCookies.com">
+          </a>
+        </div>
+        <div class="item">
+          <a href="portfolio-single.html">
+            <img src="{% static 'img/work_6.jpg' %}" alt="Free Bootstrap Template by uiCookies.com">
+          </a>
+        </div>
+        <div class="item">
+          <a href="portfolio-single.html">
+            <img src="{% static 'img/work_7.jpg' %}" alt="Free Bootstrap Template by uiCookies.com">
+          </a>
+        </div>
+      </div>
+    </section>      
+   
+    <section class="probootstrap-section probootstrap-bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-md-offset-3 text-center section-heading">
+            <h2>OVERVIEW AND HISTORY</h2>
+          </div>
+        </div>
+        <!-- END row -->
+        <div class="row">
+          <div class="col-md-12">
+            <!--<div class="owl-carousel owl-carousel-fullwidth">
+              <div class="item">
+
+                <div class="probootstrap-testimony-wrap text-center">
+                   <figure>
+                    <img src="img/person_1.jpg" alt="Free Bootstrap Template by uiCookies.com">
+                  </figure> -->
+                  <blockquote class="quote">Ayurveda, is a live science, an alternative medicine which deals not only with the life of human beings but also with the animals, plants & entire living beings in the world. <cite class="author">It is a unique science in which prevention & healing of disease is clearly mentioned around 10000 years ago. That is why; this science is getting known in the world. Ayurveda is a science which has evolved from transcendental knowledge from God & practical experience of sages of India. Ayurveda, the wisdom of longevity, focus on the living individual. Diseases management through Ayurveda aims at balancing the life force within the person. Rather than a medical system, it’s a way of life which employs a lifestyle regimen in tune with nature for enhancing immunity and self-healing. Ayurveda shows us how to improve ourselves and our internal resources to facilitate the natural healing process.  <br> Ayurveda is a Sanskrit term, made up of the words “Ayus” and “Veda”. “Ayus” means life and “Veda” means knowledge or science. The term “Ayurveda” thus means ‘the knowledge of life’ or ‘the science of life’. According to the ancient Ayurvedic scholar Charaka, “ayu” comprises the mind, body, senses and the soul.
+
+Widely regarded as the oldest form of healthcare in the world, Ayurveda is an intricate medical system that originated in India thousands of years ago. The fundamentals of Ayurveda can be found in Hindu scriptures called the Vedas — the ancient Indian books of wisdom. The Rig Veda, which was written over 6,000 years ago, contains a series of prescriptions that can help humans overcome various ailments.<span></span></cite></blockquote>
+                </div>
+
+              </div>
+              
+             
+              
+            </div>
+          </div>
+        </div>
+        <!-- END row -->
+      </div>
+    </section>
+
+    
+    
+    <section class="probootstrap-cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="probootstrap-animate" data-animate-effect="fadeInRight">We'd like to help and talk with you</h2>
+            <a href="#" role="button" class="btn btn-primary btn-lg btn-ghost probootstrap-animate" data-animate-effect="fadeInLeft">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="probootstrap-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="probootstrap-footer-widget">
+              <h3>Paragraph</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto provident qui tempore natus quos quibusdam soluta at.</p>
+              <ul class="probootstrap-footer-social">
+                <li><a href="#"><i class="icon-twitter"></i></a></li>
+                <li><a href="#"><i class="icon-facebook"></i></a></li>
+                <li><a href="#"><i class="icon-github"></i></a></li>
+                <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                <li><a href="#"><i class="icon-youtube"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="probootstrap-footer-widget">
+                  <h3>Links</h3>
+                  <ul>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Terms of services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="probootstrap-footer-widget">
+                  <h3>Links</h3>
+                  <ul>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Terms of services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="probootstrap-footer-widget">
+                  <h3>Links</h3>
+                  <ul>
+                    <li><a href="#">Knowledge Base</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Press Releases</a></li>
+                    <li><a href="#">Terms of services</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          
+        </div>
+        <!-- END row -->
+        <div class="row">
+          <div class="col-md-12 copyright">
+            <p><small>&copy; 2017 <a href="https://probootstrap.com/">uiCookies:Stack</a>. All Rights Reserved. <br> Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="https://probootstrap.com/">uiCookies.com</a></small></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+    <!-- Modal login -->
+    <div class="modal fadeInUp probootstrap-animated" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog modal-md vertical-align-center">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cross"></i></button>
+            <div class="probootstrap-modal-flex">
+              <div class="probootstrap-modal-figure" style="background-image: url({% static 'img/modal_bg.jpg' %});"></div>
+              <div class="probootstrap-modal-content">
+                <form action="#" class="probootstrap-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div> 
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div> 
+                  <div class="form-group clearfix mb40">
+                    <label for="remember" class="probootstrap-remember"><input type="checkbox" id="remember"> Remember Me</label>
+                    <a href="#" class="probootstrap-forgot">Forgot Password?</a>
+                  </div>
+                  <div class="form-group text-left">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="submit" class="btn btn-primary btn-block" value="Sign In">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group probootstrap-or">
+                    <span><em>or</em></span>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <button class="btn btn-primary btn-ghost btn-block btn-connect-facebook"><span>connect with</span> Facebook</button>
+                        <button class="btn btn-primary btn-ghost btn-block btn-connect-google"><span>connect with</span> Google</button>
+                        <button class="btn btn-primary btn-ghost btn-block btn-connect-twitter"><span>connect with</span> Twitter</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END modal login -->
+    
+    <!-- Modal signup -->
+    <div class="modal fadeInUp probootstrap-animated" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog modal-md vertical-align-center">
+          <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon-cross"></i></button>
+            <div class="probootstrap-modal-flex">
+              <div class="probootstrap-modal-figure" style="background-image: url({% static 'img/modal_bg.jpg' %});"></div>
+              <div class="probootstrap-modal-content">
+                <form action="#" class="probootstrap-form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Email">
+                  </div> 
+				  <div class="form-group">
+                    <textarea class="form-control" style="height : 60px" placeholder="Address"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Password">
+                  </div> 
+                  <div class="form-group">
+                    <input type="password" class="form-control" placeholder="Re-type Password">
+                  </div> 
+                  <div class="form-group clearfix mb40">
+                    <label for="remember" class="probootstrap-remember"><input type="checkbox" id="remember"> Remember Me</label>
+                    <a href="#" class="probootstrap-forgot">Forgot Password?</a>
+                  </div>
+                  <div class="form-group text-left">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <input type="submit" class="btn btn-primary btn-block" value="Sign Up">
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div class="form-group probootstrap-or">
+                    <span><em>or</em></span>
+                  </div>
+                  <div class="form-group">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <button class="btn btn-primary btn-ghost btn-block btn-connect-facebook">Login As Doctor</button>
+                       </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END modal signup -->
+
+    <script src="{% static 'js/scripts.min.js' %}"></script>
+    <script src="{% static 'js/custom.min.js' %}"></script>
+
+  </body>
+</html>

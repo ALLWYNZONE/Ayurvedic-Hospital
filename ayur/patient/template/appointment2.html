@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ayur.com</title>
+    <meta name="description" content="Free Bootstrap Theme by uicookies.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,700">
+    <link rel="stylesheet" href="{% static 'css/styles-merged.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.min.css' %}">
+
+    <!--[if lt IE 9]>
+      <script src="{% static 'js/vendor/html5shiv.min.js' %}"></script>
+      <script src="{% static 'js/vendor/respond.min.js' %}"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+
+
+    <nav class="navbar navbar-default navbar-fixed-top probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://127.0.0.1:8000/ayur/" title="uiCookies:Stack">Stack</a>
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="http://127.0.0.1:8000/ayur/">Home</a></li>
+			<li><a href="http://127.0.0.1:8000/ayur/ayurveda">Ayurveda</a></li>
+			<li><a href="http://127.0.0.1:8000/ayur/departments">Departments</a></li>
+			<li><a href="http://127.0.0.1:8000/ayur/doctors">Doctors</a></li>
+			<li><a href="">Pharmacy</a></li>
+			<li><a href="http://127.0.0.1:8000/ayur/appointment/">Book Appointment</a></li>
+            <li class="dropdown">
+              <a href="#" data-toggle="dropdown" class="dropdown-toggle">Ayur.com</a>
+              <ul class="dropdown-menu">
+                <li><a href="http://127.0.0.1:8000/ayur/aboutus">About Us</a></li>
+                <li><a href="http://127.0.0.1:8000/ayur/contact">Contact Us</a></li>
+              </ul>
+            </li>
+
+            <li class="probootstra-cta-button"><a href="#" class="btn" data-toggle="modal" data-target="#loginModal">Log in</a></li>
+            <li class="probootstra-cta-button last"><a href="#" class="btn btn-ghost" data-toggle="modal" data-target="#signupModal">Sign up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="flexslider">
+      <ul class="slides">
+
+        <li style="background-image: url({% static 'img/work_1.jpg' %})" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2">
+                <div class="probootstrap-slider-text text-center">
+                  <h1 class="probootstrap-heading">Book An Appointment</h1>
+                  <p class="probootstrap-subheading">Now You Can Book Appointments Online</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+     <section class="probootstrap-section probootstrap-bg-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 probootstrap-animate" data-animate-effect="fadeIn">
+            <h2>Book Appointment</h2>
+
+
+            <form action="http://127.0.0.1:8000/ayur/saveappointment" method="POST">
+              {% csrf_token %}
+
+          <div>
+            <h2></h2>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+              <div class="form-group">
+                <label for="message">Address</label>
+                <textarea cols="30" rows="10" class="form-control" id="message" name="address"></textarea>
+              </div>
+              <div class="form-group">
+                <label for="subject">Date</label>
+                <input type="date" class="form-control" id="subject" name="date">
+              </div>
+              <div class="form-group">
+                <label for="subject">Date Of Birth</label>
+                <input type="date" class="form-control" id="subject" name="dob">
+              </div>
+            <div class="form-group">
+                <label for="subject">Gender</label>
+                <select name="gender" class="form-control" id="subject">
+                     <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Mobile</label>
+                <input type="integer" class="form-control" id="name" name="mob">
+              </div>
+              <div class="form-group">
+                <label for="subject">Doctor</label>
+                <select name="doc" class="form-control" id="subject">
+                     <option value="doc1">doc1</option>
+                      <option value="doc2">doc2</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Disease</label>
+                <textarea cols="30" rows="10" class="form-control" id="message" name="disease"></textarea>
+              </div>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary btn-lg" id="submit" name="submit" value="Book now">
+              </div>
+          </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- END modal signup -->
+
+    <script src="{% static 'js/scripts.min.js' %}"></script>
+    <script src="{% static 'js/custom.min.js' %}"></script>
+
+  </body>
+</html>
